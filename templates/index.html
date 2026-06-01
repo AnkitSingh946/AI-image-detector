@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero-section">
+    <div class="container hero-container">
+        <div class="hero-content">
+            <span class="badge">Advanced Deep Learning</span>
+            <h1 class="hero-title">AI Image Authenticity Detector</h1>
+            <p class="hero-subtitle">Upload an image and instantly detect whether it is a real photograph or AI-generated using our detection model.</p>
+            <div class="hero-actions">
+                <a href="/detect" class="btn btn-primary btn-lg">
+                    Start Detection
+                    <i class="ph ph-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="glass-card demo-card">
+                <div class="demo-image-container">
+                    <!-- Replaced the icon with an AI-generated styled image -->
+                    <div class="demo-image" style="overflow: hidden; border-radius: 8px;">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600&q=80" alt="AI Generated Portrait" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <div class="scan-line"></div>
+                </div>
+                <div class="demo-result">
+                    <div class="result-badge fake">
+                        <i class="ph ph-x-circle"></i> AI-Generated 98%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="how-it-works-section">
+    <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-icon">
+                    <i class="ph ph-upload-simple"></i>
+                </div>
+                <h3>1. Upload</h3>
+                <p>Drag and drop or select any image you want to verify.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-icon">
+                    <i class="ph ph-cpu"></i>
+                </div>
+                <h3>2. Analyze</h3>
+                <p>Our deep learning model analyzes pixel patterns and artifacts.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-icon">
+                    <i class="ph ph-check-circle"></i>
+                </div>
+                <h3>3. Result</h3>
+                <p>Get an instant authenticity score and detailed model insights.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

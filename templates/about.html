@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container page-container">
+    <div class="glass-card content-card">
+        <h1 class="page-title">About the Project</h1>
+        
+        <section class="about-section">
+            <h2>Project Purpose</h2>
+            <p>The AI Image Authenticity Detector is designed to tackle the growing challenge of synthetic media and deepfakes. By leveraging advanced deep learning techniques, this tool provides a fast, reliable way to distinguish between real photographs and AI-generated images, ensuring trust and authenticity in digital media.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>The Dataset</h2>
+            <p>The CIFAKE dataset is used in this project to train and evaluate the AI Image Detection System for classifying images as real or fake. It consists of a balanced collection of real images and AI-generated images, allowing the model to learn meaningful differences between authentic and synthetic visual content. The dataset helps the deep learning model identify patterns such as texture inconsistencies and unnatural features commonly found in generated images. By training on CIFAKE, the model achieves better accuracy and generalization, making it effective for real-world image authenticity detection tasks.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Model Architecture</h2>
+            <p>The architecture of the model used in this project is based on a combination of Convolutional Neural Networks (CNN) and the ResNet (Residual Network) approach. CNN is used as the fundamental building block for extracting important features from images, such as edges, textures, and patterns. It consists of multiple layers including convolutional layers, activation functions, pooling layers, and fully connected layers, which work together to progressively learn complex representations of the input images.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Technologies Used</h2>
+            <ul class="tech-list">
+                <li><i class="ph ph-brain"></i> <strong>PyTorch</strong> - Deep Learning Framework</li>
+                <li><i class="ph ph-server"></i> <strong>Flask</strong> - Backend API & Server</li>
+                <li><i class="ph ph-file-html"></i> <strong>HTML5 / CSS3</strong> - User Interface</li>
+                <li><i class="ph ph-file-js"></i> <strong>Vanilla JS</strong> - Dynamic Interactions</li>
+            </ul>
+        </section>
+    </div>
+</div>
+{% endblock %}

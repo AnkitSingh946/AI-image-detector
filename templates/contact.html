@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container page-container">
+    <div class="glass-card content-card contact-card">
+        <div class="contact-info">
+            <h1 class="page-title">Get in Touch</h1>
+            <p class="text-muted">Have questions, feedback, or suggestions for improving the detection model? We'd love to hear from you.</p>
+            
+            <div class="contact-methods mt-6">
+                <div class="contact-method">
+                    <i class="ph ph-envelope-simple"></i>
+                    <div>
+                        <h4>Email Us</h4>
+                        <p>support@authdetect.ai</p>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <i class="ph ph-github-logo"></i>
+                    <div>
+                        <h4>Contribute</h4>
+                        <p>github.com/authdetect</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-form-container">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" class="form-control" rows="5" placeholder="How can we help you?" required></textarea>
+                </div>
+                <button type="button" class="btn btn-primary btn-full" onclick="alert('This is a demo. Message not sent.')">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
